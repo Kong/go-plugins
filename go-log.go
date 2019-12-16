@@ -1,7 +1,9 @@
+/*
+A reimplementation of Kong's file-log plugin in Go.
+*/
 package main
 
 import (
-	"fmt"
 	"github.com/Kong/go-pdk"
 	"os"
 )
@@ -16,14 +18,6 @@ var channels map[string]chan []byte
 
 func New() interface{} {
 	return &Config{}
-}
-
-func (conf Config) Access(kong *pdk.PDK) {
-	host, err := kong.Request.GetHeader("host")
-	if err != nil {
-		kong.Log.Err(err.Error())
-	}
-	kong.Response.SetHeader("x-hello-go", fmt.Sprintf("Go says hello to %s (%s)", host, conf.Path))
 }
 
 func (conf Config) Log(kong *pdk.PDK) {
