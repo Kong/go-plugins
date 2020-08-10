@@ -1,7 +1,8 @@
 # Kong Go Plugins
 
-[Kong](https://konghq.com) plugins written in Go. This repo contains a couple
-of examples to get you started:
+Example code of [Kong](https://konghq.com) plugins written in Go.
+These are not plugins intended for production use, but rather
+small examples to get you started writing your own:
 
 * **go-hello**: a "hello world" plugin, which reads a request header
   and sets a response header.
