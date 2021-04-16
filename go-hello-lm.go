@@ -10,12 +10,7 @@ import (
 	"log"
 
 	"github.com/Kong/go-pdk"
-	"github.com/Kong/go-pdk/server"
 )
-
-func main() {
-	server.StartServer(New, Version, Priority)
-}
 
 var Version = "0.2"
 var Priority = 1
