@@ -6,4 +6,7 @@ small examples to get you started writing your own:
 
 * **go-hello**: a "hello world" plugin, which reads a request header
   and sets a response header.
+* **go-hello-lm**: same as the previous as a loadble module to use
+  with the go-pluginserver.
 * **go-log**: a reimplementation of Kong's `file-log` plugin in Go.
+  shows the use of go I/O, goroutines and long-lived globals.
