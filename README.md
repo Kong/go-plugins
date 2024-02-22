@@ -1,4 +1,6 @@
-# Kong Go Plugins
+# :warning: This repository is no longer maintained. Examples are now in the go-pdk [repo](https://github.com/Kong/go-pdk/tree/master/examples)
+
+## Kong Go Plugins
 
 Example code of [Kong](https://konghq.com) plugins written in Go.
 These are not plugins intended for production use, but rather
